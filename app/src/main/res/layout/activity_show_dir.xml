@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowDirActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow_shape"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/dirtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="50dp"
+                android:text="dirtext"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/makedir"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/makedir"/>
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/makedir"
+                android:background="@drawable/upload"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

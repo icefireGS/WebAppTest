@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SSC523网盘</string>
+
+    <drawable name="clr_normal">#37b0e4</drawable>
+    <drawable name="clr_pressed">#ffff0000</drawable>
+
+    <drawable name="lenear_normal">#BDC7D8</drawable>
+    <drawable name="lenear_pressed">#FFFFFF</drawable>
+
+    <drawable name="task_normal">#00000000</drawable>
+    <drawable name="task_pressed">#ffff0000</drawable>
+</resources>

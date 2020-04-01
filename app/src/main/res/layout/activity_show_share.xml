@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shadow_shape"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/shareBack"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/goback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享列表"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享数:"
+            android:layout_toLeftOf="@+id/sharenum"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:id="@+id/sharenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_toLeftOf="@+id/maxsharenum"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/maxsharenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/10"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/shareListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/completeimage"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/completfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="testfile"/>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#37b0e4"
+            android:text="传输成功!"/>
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/openfile"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/deleteButton"
+        android:background="#00000000"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/delete"/>
+
+</RelativeLayout>
